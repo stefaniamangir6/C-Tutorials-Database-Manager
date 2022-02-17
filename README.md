@@ -1,6 +1,7 @@
 # C-Tutorials-Database-Manager
 Software application to help you manage your tutorials and create watch lists on your way to be a C++ master.
-Main features
+
+Main features:
 - The application can be used in two modes: administrator and user. When the application is started, it will offer the option to choose the mode.
     - Admin mode: the application will have a database , which holds all the tutorials; admin can add a new tutorial, delete a tutorial and update the information                     of a tutorial. 
     - User mode: the user can create a watch list with the tutorials that he/she wants to watch. 
