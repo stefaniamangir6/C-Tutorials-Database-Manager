@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B4104E51-E83E-4909-A5FD-1728A0614564}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Action.cpp" />
+    <ClCompile Include="AdminGUI.cpp" />
+    <ClCompile Include="CustomTableModel.cpp" />
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="Repository.cpp" />
+    <ClCompile Include="testController.cpp" />
+    <ClCompile Include="testDynamicVector.cpp" />
+    <ClCompile Include="testFileRepo.cpp" />
+    <ClCompile Include="testRepository.cpp" />
+    <ClCompile Include="tests.cpp" />
+    <ClCompile Include="testTutorial.cpp" />
+    <ClCompile Include="testUserController.cpp" />
+    <ClCompile Include="testValidator.cpp" />
+    <ClCompile Include="testWatchlist.cpp" />
+    <ClCompile Include="Tutorial.cpp" />
+    <ClCompile Include="UserController.cpp" />
+    <ClCompile Include="UserGUI.cpp" />
+    <ClCompile Include="Validator.cpp" />
+    <ClCompile Include="Watchlist.cpp" />
+    <QtRcc Include="assignment89TutorialsGUI.qrc" />
+    <QtUic Include="assignment89TutorialsGUI.ui" />
+    <QtMoc Include="assignment89TutorialsGUI.h" />
+    <ClCompile Include="AdminController.cpp" />
+    <ClCompile Include="assignment89TutorialsGUI.cpp" />
+    <ClCompile Include="CSVRepository.cpp" />
+    <ClCompile Include="CSVWatchlist.cpp" />
+    <ClCompile Include="Duration.cpp" />
+    <ClCompile Include="DynamicVector.cpp" />
+    <ClCompile Include="FileRepository.cpp" />
+    <ClCompile Include="FileRepoWatchlist.cpp" />
+    <ClCompile Include="FileWatchlist.cpp" />
+    <ClCompile Include="HTMLRepository.cpp" />
+    <ClCompile Include="HTMLWatchlist.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="AdminController.h" />
+    <ClInclude Include="AdminGUI.h" />
+    <ClInclude Include="CSVRepository.h" />
+    <ClInclude Include="CSVWatchlist.h" />
+    <ClInclude Include="CustomTableModel.h" />
+    <ClInclude Include="Duration.h" />
+    <ClInclude Include="DynamicVector.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="FileRepository.h" />
+    <ClInclude Include="FileRepoWatchlist.h" />
+    <ClInclude Include="FileWatchlist.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="HTMLRepository.h" />
+    <ClInclude Include="HTMLWatchlist.h" />
+    <ClInclude Include="Repository.h" />
+    <ClInclude Include="testController.h" />
+    <ClInclude Include="testDynamicVector.h" />
+    <ClInclude Include="testFileRepo.h" />
+    <ClInclude Include="testRepository.h" />
+    <ClInclude Include="tests.h" />
+    <ClInclude Include="testTutorial.h" />
+    <ClInclude Include="testUserController.h" />
+    <ClInclude Include="testValidator.h" />
+    <ClInclude Include="testWatchlist.h" />
+    <ClInclude Include="Tutorial.h" />
+    <ClInclude Include="UserController.h" />
+    <ClInclude Include="UserGUI.h" />
+    <ClInclude Include="Validator.h" />
+    <ClInclude Include="Watchlist.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LastCoverageResults.log" />
+    <Text Include="testTutorials.txt" />
+    <Text Include="testTutorials1.txt" />
+    <Text Include="tutorials.txt" />
+    <Text Include="tutorials_in.txt" />
+    <Text Include="watchlist.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tutorials.csv" />
+    <None Include="Tutorials.html" />
+    <None Include="Watchlist.csv" />
+    <None Include="Watchlist.html" />
+    <None Include="Watchlistt.html" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

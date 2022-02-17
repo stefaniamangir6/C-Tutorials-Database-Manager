@@ -1,0 +1,3 @@
+Introducere in programare - tutorial C++ - cursul 1;VideoTutorial;56;33;1500;https://www.youtube.com/watch?v=JjY9U9lu37I
+C++ Tutorial From Basic to Advance;Extern Code;88;32;1222;https://www.youtube.com/watch?v=mUQZ1qmKlLY
+C++ FULL COURSE For Beginners (Learn C++ in 10 hours);Code Beauty;12;11;18779;https://www.youtube.com/watch?v=GQp1zzTwrIg&t=1s

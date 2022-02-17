@@ -1,0 +1,10 @@
+Introducere in programare - tutorial C++ - cursul 1;VideoTutorial;56;33;1500;https://www.youtube.com/watch?v=JjY9U9lu37I
+C++ Tutorial From Basic to Advance;Extern Code;88;32;1222;https://www.youtube.com/watch?v=mUQZ1qmKlLY
+C++ Programming Tutorial 1 - Intro to C++;Caleb Curry;34;33;5678;https://www.youtube.com/watch?v=OTroAxvRNbw
+C++ Crash Course For Beginners;Traversy Media;11;22;5600;https://www.youtube.com/watch?v=1v_4dL8l8pQ
+C++ Programming;Derek Banas;55;8;4775;https://www.youtube.com/watch?v=Rub-JsjMhWY
+C++ Tutorial 14: Templates & Iterators;Derek Banas;56;33;767;https://www.youtube.com/watch?v=ywNZAebgEZw
+C++ OOP (2020) - What is inheritance in programming?;CodeBeauty;52;31;188;https://www.youtube.com/watch?v=-W-TYjL0aFE
+C++ Programming All-in-One;Caleb Curry;120;8;13002;https://www.youtube.com/watch?v=_bYFu9mBnr4
+C++ FULL COURSE For Beginners (Learn C++ in 10 hours);Code Beauty;12;11;18779;https://www.youtube.com/watch?v=GQp1zzTwrIg&t=1s
+C++ Tutorial 2020;Derek Banas;22;8;5681;https://www.youtube.com/watch?v=6y0bp-mnYU0

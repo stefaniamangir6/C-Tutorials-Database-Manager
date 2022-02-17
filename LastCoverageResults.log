@@ -1,0 +1,21 @@
+[2021-04-20 08:33:26] [info] Start Program:
+Path:"C:\\Users\\Stefania\\source\\repos\\assignment4-5\\x64\\Debug\\assignment4-5.exe"
+Arguments:
+Working directory: "C:\\Users\\Stefania\\source\\repos\\assignment4-5\\"
+Modules: Selected: C:\Users\Stefania\source\repos\assignment4-5\x64\Debug\assignment4-5.exe Excluded: 
+Sources: Selected: C:\Users\Stefania\source\repos\assignment4-5 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: binary C:\Users\Stefania\AppData\Local\Temp\laufmgwy.03g 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2021-04-20 08:33:27] [info] Module: C:\Users\Stefania\source\repos\assignment4-5\x64\Debug\assignment4-5.exe is selected because it matches selected pattern: C:\Users\Stefania\source\repos\assignment4-5\x64\Debug\assignment4-5.exe
+[2021-04-20 08:33:32] [info] ----------------------------------------------------
+[2021-04-20 08:33:32] [info] Coverage binary generated in file: C:\Users\Stefania\AppData\Local\Temp\laufmgwy.03g
+[2021-04-20 08:33:32] [info] ----------------------------------------------------
