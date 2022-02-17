@@ -12,7 +12,6 @@ Main features:
                  - The application will allow the user to:
                  
                     * View the tutorials
-                    
                     * See the tutorials in the database having a given presenter (if the presenter name is empty, see all the tutorials)
                     * Choose whether to add it to his/her tutorial watch list or not .
                     * Delete a tutorial from the watch list; when deleting a tutorial from the watch list, the user can also rate the tutorial (with a like)
